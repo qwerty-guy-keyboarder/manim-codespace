@@ -1,38 +1,25 @@
-# Manim Devcontainer
+# Manim Workshop Codespace
 
-A devcontainer to get started coding with manim quickly and easily.
-
-Note, this uses manim ce (community edition).
+Forking this repository to your personal GitHub
+account will allow you to use GitHub Codespaces
+to get started with manim community edition using
+just your web browser.
 
 # Getting Started
 
-## Platform
-
-### Github Codespaces
-
-Remember to check whether you have access to github codespaces, either by buying it, applying to the beta program or from your company/institution.
+## Set up GitHub Codespaces
 
 1. Fork the repository (by clicking the fork button on the top right of your screen)
 2. Click the green code button, then under codespaces click "Create codespace on main."
 
-### Local Installation
-
-1. Fork the repository (by clicking the fork button on the top right of your screen).
-2. Clone your forked repository to your local machine.
-3. Install docker desktop (if your operating system is windows, you may need to install WSL 2 for this). 
-4. Install the VS Code extension: "Remote - Containers".
-5. Then click on the green button on the very bottom left, which will bring up a pop up, then click "reopen in container".
-
 ## Rendering 
 
-The command to render a scene is `manim render filename.py SceneName`.
+The command to render a scene is `manim render main.py TanLine`. Use the Terminal to run this command. If a Terminal is not visible in your Codespace, use the keyboard shortcut ``[Ctrl/Cmd]+[Shift]+[`]`` to make it appear.
 
-There is a python file `example_scenes.py` which contains a few example scenes you can practice rendering. To render the SquareToCircle scene, we type in the terminal `manim render example_scenes.py SquareToCircle`.
-
-You can now view the video by looking under the folder `media/videos/example` and then clicking on the video which will have the name of your scene.
+You can now view the video by looking under the folder `media/videos/main` and then clicking on the video which will have the name of your scene. You may need to click the refresh icon `⟳` if your video file does not appear at first.
 
 We can also define the quality (default is 1920x1080 60FPS). We can add `-ql` for 854x480 15FPS, `-qm` for 1280x720 30FPS, `-qh` for 1920x1080 60FPS, `-qp` for 2560x1440 and `-qk` for 3840x2160 60FPS. \
-For example, `manim render -ql example_scenes.py SquareToCircle` will render the scene at 854x480 15FPS. Note, lower quality videos render faster, so it is adviced to render low quality videos while coding, and higher quality videos when you need to export them. 
+For example, `manim render -ql main.py Riemann` will render the scene at 854x480 15FPS. Note, lower quality videos render faster, so it is adviced to render low quality videos while coding, and higher quality videos when you need to export them. 
 
 To get more options and help with rendering, type `manim render --help`.
 

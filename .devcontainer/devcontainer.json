@@ -7,15 +7,9 @@
 
 	"customizations": {
 		"vscode": {
-			"settings": { 
-				"terminal.integrated.defaultProfile.linux": "zsh",
-				"workbench.colorTheme": "Community Material Theme High Contrast"
-			},
 			"extensions": [
 				"ms-python.python",
 				"ms-python.vscode-pylance",
-				"Rickaym.manim-sideview",
-				"Equinusocio.vsc-material-theme",
 				"analytic-signal.preview-mp4"
 			]
 		}
