@@ -14,7 +14,7 @@ just your web browser.
 
 ## Rendering 
 
-The command to render a scene is `manim render main.py TanLine`. Use the Terminal to run this command. If a Terminal is not visible in your Codespace, use the keyboard shortcut ``[Ctrl/Cmd]+[Shift]+[`]`` to make it appear.
+The command to render a scene is `manim render -ql main.py TanLine`. Use the Terminal to run this command. If a Terminal is not visible in your Codespace, use the keyboard shortcut ``[Ctrl/Cmd]+[Shift]+[`]`` to make it appear.
 
 You can now view the video by looking under the folder `media/videos/main` and then clicking on the video which will have the name of your scene. You may need to click the refresh icon `⟳` if your video file does not appear at first.
 
