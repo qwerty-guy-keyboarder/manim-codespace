@@ -446,3 +446,10 @@ class Riemann(Scene):
         self.play(tracker.animate.set_value(6), run_time=2)
         self.wait(5)                
 
+class Ani(Scene):
+    def construct(self):
+        text_hyperbolt1 = Text("F1", weight=BOLD, color=BLUE, font="Arial", font_size=160, width=12.5)
+        text_hyperbolt = Text("Hyperbolt", weight=BOLD, color=BLUE, font="Arial", font_size=160, width=12.5)
+
+        self.play(Write(text_hyperbolt1))
+        self.play(Transform(text_hyperbolt1, text_hyperbolt))
